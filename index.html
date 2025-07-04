@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List with Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+
+    <!-- To-Do List Section -->
+    <div class="todo-container">
+      <h2>📝 My To-Do List</h2>
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add</button>
+      </div>
+      <div class="status-bar">
+        <span id="taskCount">Tasks: 0</span>
+        <button class="clear-all" onclick="clearAllTasks()">Clear All</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form">
+      <h2>📩 Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Make sure the script is placed at the END -->
+  <script src="script.js"></script>
+</body>
+</html>
